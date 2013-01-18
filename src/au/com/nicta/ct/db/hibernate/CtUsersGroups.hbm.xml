@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24/01/2011 2:48:48 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class name="au.com.nicta.ct.db.hibernate.CtUsersGroups" schema="public" table="ct_users_groups">
+    <id name="pkUserGroup" type="int">
+      <column name="pk_user_group"/>
+      <generator class="sequence">
+        <param name="sequence">ct_users_groups_sequence</param>
+      </generator>
+    </id>
+    <many-to-one class="au.com.nicta.ct.db.hibernate.CtGroups" fetch="select" name="ctGroups">
+      <column name="fk_group"/>
+    </many-to-one>
+    <many-to-one class="au.com.nicta.ct.db.hibernate.CtUsers" fetch="select" name="ctUsers">
+      <column name="fk_user"/>
+    </many-to-one>
+  </class>
+</hibernate-mapping>

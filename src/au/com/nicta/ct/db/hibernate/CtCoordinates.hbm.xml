@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24/01/2011 2:48:48 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class name="au.com.nicta.ct.db.hibernate.CtCoordinates" schema="public" table="ct_coordinates">
+    <id name="pkCoordinate" type="int">
+      <column name="pk_coordinate"/>
+      <generator class="sequence">
+        <param name="sequence">ct_coordinates_sequence</param>
+      </generator>
+    </id>
+    <many-to-one class="au.com.nicta.ct.db.hibernate.CtCoordinatesTypes" fetch="select" name="ctCoordinatesTypes">
+      <column name="fk_coordinate_type"/>
+    </many-to-one>
+    <property name="value" type="java.lang.Integer">
+      <column name="value"/>
+    </property>
+    <property name="name" type="java.lang.String">
+      <column name="name"/>
+    </property>
+    <set inverse="true" name="ctExperimentsAxesesForFkCoordinate2">
+      <key>
+        <column name="fk_coordinate2"/>
+      </key>
+      <one-to-many class="au.com.nicta.ct.db.hibernate.CtExperimentsAxes"/>
+    </set>
+    <set inverse="true" name="ctImagesCoordinateses">
+      <key>
+        <column name="fk_coordinate"/>
+      </key>
+      <one-to-many class="au.com.nicta.ct.db.hibernate.CtImagesCoordinates"/>
+    </set>
+    <set inverse="true" name="ctExperimentsAxesesForFkCoordinate1">
+      <key>
+        <column name="fk_coordinate1"/>
+      </key>
+      <one-to-many class="au.com.nicta.ct.db.hibernate.CtExperimentsAxes"/>
+    </set>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/ctdb</property>
+    <property name="hibernate.connection.username">ctapp</property>
+    <property name="hibernate.connection.password">password</property>
+    <property name="hibernate.show_sql">true</property>
+    <mapping resource="au/com/nicta/ct/db/hibernate/CtCoordinatesTypes.hbm.xml"/>
+    <mapping resource="au/com/nicta/ct/db/hibernate/CtSolutions.hbm.xml"/>
+    <mapping resource="au/com/nicta/ct/db/hibernate/CtTracks.hbm.xml"/>
+    <mapping resource="au/com/nicta/ct/db/hibernate/CtUwells.hbm.xml"/>
+    <mapping resource="au/com/nicta/ct/db/hibernate/CtGroups.hbm.xml"/>
+    <mapping resource="au/com/nicta/ct/db/hibernate/CtImagesCoordinates.hbm.xml"/>
+    <mapping resource="au/com/nicta/ct/db/hibernate/CtTracksDetections.hbm.xml"/>
+    <mapping resource="au/com/nicta/ct/db/hibernate/CtUsers.hbm.xml"/>
+    <mapping resource="au/com/nicta/ct/db/hibernate/CtPropertiesTypes.hbm.xml"/>
+    <mapping resource="au/com/nicta/ct/db/hibernate/CtGroupsExperiments.hbm.xml"/>
+    <mapping resource="au/com/nicta/ct/db/hibernate/CtUsersGroups.hbm.xml"/>
+    <mapping resource="au/com/nicta/ct/db/hibernate/CtImages.hbm.xml"/>
+    <mapping resource="au/com/nicta/ct/db/hibernate/CtExperimentsAxes.hbm.xml"/>
+    <mapping resource="au/com/nicta/ct/db/hibernate/CtDetections.hbm.xml"/>
+    <mapping resource="au/com/nicta/ct/db/hibernate/CtExperiments.hbm.xml"/>
+    <mapping resource="au/com/nicta/ct/db/hibernate/CtProperties.hbm.xml"/>
+    <mapping resource="au/com/nicta/ct/db/hibernate/CtCoordinates.hbm.xml"/>
+    <mapping resource="au/com/nicta/ct/db/hibernate/CtPropertiesRanges.hbm.xml"/>
+    <mapping resource="au/com/nicta/ct/db/hibernate/CtEntityProperties.hbm.xml"/>
+    <mapping class="" file="" jar="" package="" resource="au/com/nicta/ct/db/hibernate/CtEntityPropertiesTypes.hbm.xml"/>
+    <mapping resource="au/com/nicta/ct/db/hibernate/CtAnnotations.hbm.xml"/>
+    <mapping class="" file="" jar="" package="" resource="au/com/nicta/ct/db/hibernate/CtAnnotationsTypes.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

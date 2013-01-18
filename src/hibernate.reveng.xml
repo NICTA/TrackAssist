@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="ctdb" match-schema="public"/>
+  <table-filter match-name="ct_system_properties"/>
+  <table-filter match-name="ct_annotations"/>
+  <table-filter match-name="ct_annotations_types"/>
+  <table-filter match-name="ct_groups_experiments"/>
+  <table-filter match-name="ct_detections"/>
+  <table-filter match-name="ct_images_coordinates"/>
+  <table-filter match-name="ct_groups"/>
+  <table-filter match-name="ct_properties"/>
+  <table-filter match-name="ct_properties_types"/>
+  <table-filter match-name="ct_properties_ranges"/>
+  <table-filter match-name="ct_entity_properties"/>
+  <table-filter match-name="ct_entity_properties_types"/>
+  <table-filter match-name="ct_solutions"/>
+  <table-filter match-name="ct_tracks_detections"/>
+  <table-filter match-name="ct_experiments_axes"/>
+  <table-filter match-name="ct_users_groups"/>
+  <table-filter match-name="ct_experiments"/>
+  <table-filter match-name="ct_coordinates"/>
+  <table-filter match-name="ct_images"/>
+  <table-filter match-name="ct_coordinates_types"/>
+  <table-filter match-name="ct_uwells"/>
+  <table-filter match-name="ct_tracks"/>
+  <table-filter match-name="ct_users"/>
+</hibernate-reverse-engineering>

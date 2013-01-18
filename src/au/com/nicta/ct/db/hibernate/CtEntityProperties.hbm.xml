@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24/01/2011 2:48:48 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class name="au.com.nicta.ct.db.hibernate.CtEntityProperties" schema="public" table="ct_entity_properties">
+    <id name="pkEntityProperty" type="int">
+      <column name="pk_entity_property"/>
+      <generator class="sequence">
+        <param name="sequence">ct_entity_properties_sequence</param>
+      </generator>
+    </id>
+    <many-to-one class="au.com.nicta.ct.db.hibernate.CtSolutions" fetch="join" name="ctSolutions">
+      <column name="fk_solution"/>
+    </many-to-one>
+    <property name="entityName" type="java.lang.String">
+      <column name="entity_name"/>
+    </property>
+    <property name="entityPk" type="java.lang.Integer">
+      <column name="entity_pk"/>
+    </property>
+    <property name="name" type="java.lang.String">
+      <column name="name"/>
+    </property>
+    <property name="value" type="java.lang.String">
+      <column name="value"/>
+    </property>
+  </class>
+</hibernate-mapping>
