@@ -1,6 +1,6 @@
 -- Data locations
-INSERT INTO public.ct_properties( fk_property_type,name,value) VALUES (1,'application-path','C:\Users\davidjr\Documents\midas\open-source\TrackAssist\TrackAssist');
-INSERT INTO public.ct_properties( fk_property_type,name,value) VALUES (1,'experiments-path','C:\Users\davidjr\Documents\midas\open-source\TrackAssist\TrackAssist\experiments');
+INSERT INTO public.ct_properties( fk_property_type,name,value) VALUES (1,'application-path','FOLDER_CONTAINING_EXECUTABLE');
+INSERT INTO public.ct_properties( fk_property_type,name,value) VALUES (1,'experiments-path','FOLDER_FOR_PROGRAM_DATA');
 INSERT INTO public.ct_properties( fk_property_type,name,value) VALUES (1,'data','data');
 
 -- USERS / GROUPS
