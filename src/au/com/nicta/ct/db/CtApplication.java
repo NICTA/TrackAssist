@@ -36,7 +36,7 @@ public class CtApplication {
     public static final String DELIMITER = "/"; // java makes it platform independent?
     public static final String KEY_APPLICATION_PATH = "application-path"; // java makes it platform independent?
     public static final String KEY_EXPERIMENTS_PATH = "experiments-path"; // java makes it platform independent?
-    public static final String KEY_DATA = "data"; // java makes it platform independent?
+    public static final String KEY_DATA = "art"; // java makes it platform independent?
 
     public static final String PROPERTY_TYPE_SYSTEM = "system";
     
