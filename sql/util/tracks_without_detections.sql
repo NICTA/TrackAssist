@@ -1,1 +1,0 @@
-﻿select * from ct_tracks t left join ct_tracks_detections td on t.pk_track = td.fk_track where t.fk_solution = 11 order by fk_detection
